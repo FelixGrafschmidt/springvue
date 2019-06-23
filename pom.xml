@@ -23,5 +23,8 @@
 		<main.basedir>${project.basedir}</main.basedir>
 	</properties>
 
-
+	<modules>
+		<module>frontend</module>
+		<module>backend</module>
+	</modules>
 </project>

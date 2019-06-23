@@ -3,7 +3,9 @@ module.exports = {
 	chainWebpack: (config) => {
 		config.plugins.delete("preload-index");
 		config.plugin("html-index").tap((args) => {
-			args[0].minify.removeAttributeQuotes = false;
+			if (args[0].minify) {
+				args[0].minify.removeAttributeQuotes = false;
+			}
 			return args;
 		});
 	},
@@ -22,4 +24,13 @@ module.exports = {
 		},
 	},
 	runtimeCompiler: true,
+	devServer: {
+		proxy: {
+			"/": {
+				target: "http://localhost:8082",
+				ws: true,
+				changeOrigin: true,
+			},
+		},
+	},
 };
