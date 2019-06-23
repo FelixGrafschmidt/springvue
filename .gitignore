@@ -52,5 +52,4 @@ yarn-error.log*
 *.sw?
 
 **/static/**
-**/templates/**
 **/node/**
