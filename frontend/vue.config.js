@@ -1,5 +1,5 @@
 module.exports = {
-	outputDir: "target/static",
+	outputDir: "target",
 	chainWebpack: (config) => {
 		config.plugins.delete("preload-index");
 		config.plugin("html-index").tap((args) => {
@@ -15,7 +15,7 @@ module.exports = {
 			// the source template
 			template: "../backend/src/main/resources/raw/index.mustache",
 			// output as dist/index.html
-			filename: "../templates/index.mustache",
+			filename: "index.mustache",
 			// chunks to include on this page, by default includes
 			// extracted common chunks and vendor chunks.
 			chunks: ["chunk-vendors", "chunk-common", "index"],
