@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		{{#scripts}}
+		<link rel="preload" as="script" href="{{ script }}" />
+		{{/scripts}}
+		{{#styles}}
+		<link rel="preload" as="stylesheet" href="{{ style }}" />
+		{{/styles}}
 	</head>
 	<body>
 		<div>
-			<h2>{{testString}}</h2>
+			<h2>{{ testString }}</h2>
 		</div>
 		<div id="vueApp">
 			<hhd-app></hhd-app>
 		</div>
-		<script src='{{common}}'></script>
-		<script src='{{vendors}}'></script>
-		<script src='{{index}}'></script>
+		{{#scripts}}
+		<script src="{{ script }}"></script>
+		{{/scripts}}
+		{{#styles}}
+		<script src="{{ style }}"></script>
+		{{/styles}}
 	</body>
 </html>

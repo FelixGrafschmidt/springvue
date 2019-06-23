@@ -14,8 +14,7 @@ module.exports = {
 	configureWebpack: {
 		plugins: [
 			new StatsPlugin("stats.json", {
-				assets: true,
-				assetsSort: "chunk",
+				assets: false,
 				chunks: false,
 				modules: false,
 				version: false,
@@ -24,7 +23,6 @@ module.exports = {
 				outputPath: false,
 				filteredAssets: false,
 				entrypoints: false,
-				namedChunkGroups: false,
 				children: false,
 			}),
 		],
@@ -52,6 +50,6 @@ module.exports = {
 				changeOrigin: true,
 			},
 		},
-		publicPath: "/js/"
+		publicPath: "/js/",
 	},
 };
