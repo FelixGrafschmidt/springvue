@@ -1,5 +1,5 @@
 <template>
-	<h2 class="test">Generated with Vue!</h2>
+	<h2 class="test">Generated with Vue, yay!</h2>
 </template>
 
 <script>

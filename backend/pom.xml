@@ -7,12 +7,6 @@
 		<artifactId>springvue</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<!-- <parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.6.RELEASE</version>
-		<relativePath/>
-	</parent> -->
 	<groupId>hhd.demo</groupId>
 	<artifactId>springvuebackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
